@@ -1,0 +1,26 @@
+@keyframes dibujarLinea {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+@keyframes appear {
+  0% {
+      visibility: hidden;
+      transform: translateX(-20px);
+      opacity: 0;
+  }
+  100% {
+      visibility: visible;
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+
+
+

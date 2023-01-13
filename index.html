@@ -1,115 +1,128 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangar5</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
-    <link rel="icon" href="assets/images/favicon2.gif">
+    <title>Workshop | Hangar 5</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
+    <link rel="stylesheet" href="assets/css/keyframe.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    
     
     <!-- awesome cdn -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-
-    <!-- HEADER -->
-
-    <header class="header">
-            <div class="logo">
-                <img src="./assets/images/LogoHangar.png" alt="Logo">
-            </div>
-
-        <nav class="nav-container">
-
-             <!-- Menú desplegable -->
-
-             <label for="menu-toggle" class="menu-label">
-                <i class="fa-solid fa-bars menu-icon"></i>
-            </label>
-            <input type="checkbox" id="menu-toggle">
-
-            <!-- Lista de Navegación -->
-
-            <ul class="ul-container">
-                <li class="nav-lista">
-                    <a class="nav-links" href="#">Inicio</a>
-                </li>
-                <li class="nav-lista">
-                    <a class="nav-links" href="#">Servicios</a>
-                </li>
-                <li class="nav-lista">
-                    <a class="nav-links" href="#">Contacto</a>
-                </li>
-                <li class="nav-lista">
-                    <a class="nav-links" href="#">Sobre nosotros</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Secciones -->
     
-    <main>
+<!-- Header -->
 
-        <!-- hero -->
+<header id="header">
 
-        <section id="hero">
-            <div class="hero-info">
-                <h1>Mantenemos tu coche en óptimas condiciones Hangar 5</h1>
-                <p>Nuestra misión en <span>hangar 5</span> es proporcionar servicios de reparación de alta calidad
-                <br>y mantenimiento preventivo para mantener tu coche en óptimas condiciones.</p>
-            <div class="hero-btn">
-                <button class="active">Contacto</button>    
-                <button>Más</button>
-            </div>
-            </div>
-            <div>
-                <img src="assets/svg/cool.gif" autoplay loop></img>
-                
-            </div>
-       </section>
+<div class="logo">
+    <img src="assets/images/LogoHangar.png" alt="Hangar5-logo">
+</div>
 
-       <!-- info -->
+<nav class="navbar">
 
-       <section id="info">
-            <h2 class="info-title">Acerca de nuestra empresa.</h2>
-            <p class="info-text">Somos una empresa líder en el mercado de reparación de autos, con más de 5 años de experiencia en el sector. <br> Ofrecemos servicios de alta calidad y un equipo de profesionales altamente cualificados para garantizar la satisfacción de nuestros clientes.</p>
-            <p class="info-text">Además, contamos con una amplia gama de productos y servicios para mantener tu coche en óptimas condiciones, como reparación de motor, frenos, suspensión y más.</p>
-        </section>
+<!-- Menú desplegable -->
 
-        <section id="advantages">
-            <div class="advantages-title">
-                <span>NUESTRA VENTAJAS</span>
-                <p class="mt-2">Razones para elegir nuestro taller de automóviles: experiencia, calidad y servicio excepcional</p>
+<label for="menu-toggle" class="menu-label">
+    <i class="fa-solid fa-bars menu-icon"></i>
+</label>
+<input type="checkbox" id="menu-toggle">
+
+<!-- Lista de Navegación -->
+
+<ul>
+    <li><a class="navbar-link" href="#">Inicio</a></li>
+    <li><a class="navbar-link" href="#">Sobre nosotros</a></li>
+    <li><a class="navbar-link" href="#">servicios</a></li>
+    <li><a class="navbar-link" href="#">Contacto</a></li>  
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<!-- hero -->
+
+<section id="hero">
+    <div class="hero-info">
+        <h1><span>Mantenemos tu coche en óptimas condiciones Hangar 5</h1></span></h1>
+        <p>Nuestra misión en <span>hangar 5</span> es proporcionar servicios de reparación de alta calidad
+        <br>y mantenimiento preventivo para mantener tu coche en óptimas condiciones.</p>
+        <div class="button-container">
+            <a href="#" class="primary-btn">Contacto</a>
+            <a href="#" class="alt-btn">Más</a>
+        </div>
+    </div>
+    <img class="hero-img" src="assets/images/Car.png" alt="animacion de auto">
+</section>
+<section id="about">
+    <span>Acerca de nuestra empresa</span>
+    <p>Somos una empresa líder en el mercado de reparación de autos, con más de 5 años de experiencia en el sector. Ofrecemos servicios de alta calidad y un equipo de profesionales altamente cualificados para garantizar la satisfacción de nuestros clientes.
+    Además, contamos con una amplia gama de productos y servicios para mantener tu coche enóptimas condiciones, como reparación de motor, frenos, suspensión y más.</p>
+</section>
+<section id="cards-section">
+    <h2>Lista de servicios</h2>
+    <p>Servicios para todos los modelos y marcas de vehículos</p>
+    <div class="cards-container">
+        <div class="card">
+            <i class="fas fa-location-dot"></i>
+            <h3>Servicios de reparación y mantenimiento avanzado</h3>
+            <p>Ofrecemos una amplia variedad de servicios de reparación y mantenimiento para todas las marcas y modelos de vehículos, con un equipo altamente capacitado. Contamos con tecnología y herramientas de diagnóstico avanzado.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-puzzle-piece"></i>
+            <h3>Garantía en reparaciones y servicios completos</h3>
+            <p>Ofrecemos servicios de reparación, diagnóstico, mantenimiento y reemplazo de neumáticos para todas las marcas y modelos de vehículos con garantía en las reparaciones.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-ban"></i>
+            <h3>Equipo altamente capacitado y tecnología de última generación</h3>
+            <p>Ofrecemos servicios de reparación, mantenimiento, reemplazo de neumáticos y inspecciones de seguridad para todas las marcas y modelos de vehículos, con un equipo altamente capacitado y herramientas de última generación.</p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="black-bg">
+    <div class="info-container">
+        <h2>Contactame</h2>
+        <div class="contact-info-container">
+            <div class="info-column">
+                <h3>Datos</h3>
+                <p>
+                    <img class="icon-img" src="assets/images/location-icon.png" alt="ubicación"> Servidor random 123</p>
+                <p>
+                    <img class="icon-img" src="assets/images/maill-icon.png" alt="Mail">Hangar5@company.com</p>
+                <p>
+                    <img class="icon-img" src="assets/images/Phone-icon.png" alt="telefono">24 4345 43 sads
+                </p>
             </div>
-            <div class="advantages-container">
-                <div class="container-advantages">
-                <div class="ms-3">
-                    <img src="assets/images/Car-icon-1.png" alt="icon-car">
-                </div>
-                <span>beneficio 1</span>
-                <p>Equipo de profesionales altamente capacitados: Nuestro equipo está compuesto por especialistas en sacabollos, chapa y pintura, reparación de paragolpes, limpieza de tapizados y colocación de accesorios. Todos nuestros trabajos son realizados con precisión y atención al detalle para asegurar su satisfacción total.</p>
-                </div>
-                <div class="container-advantages">
-                <div class="ms-3">
-                    <img src="assets/images/Car-icon-1.png" alt="icon-car">
-                </div>
-                <span>Beneficio 2</span>
-                <p>Equipo de profesionales altamente capacitados: Nuestro equipo está compuesto por especialistas en sacabollos, chapa y pintura, reparación de paragolpes, limpieza de tapizados y colocación de accesorios. Todos nuestros trabajos son realizados con precisión y atención al detalle para asegurar su satisfacción total.</p>
-                </div>
-                <div class="container-advantages">
-                <div class="ms-3">
-                    <img src="assets/images/Car-icon-1.png" alt="icon-car">
-                </div>
-                <span>Beneficio 3</span>
-                <p>Equipo de profesionales altamente capacitados: Nuestro equipo está compuesto por especialistas en sacabollos, chapa y pintura, reparación de paragolpes, limpieza de tapizados y colocación de accesorios. Todos nuestros trabajos son realizados con precisión y atención al detalle para asegurar su satisfacción total.</p>
-                </div>
+
+
+            <div class="info-column">
+                <h3>Hangar5</h3>
+                <a href="#">
+                    <img class="icon-img" src="assets/images/Twitter-icon.png" alt="Twitter">Twitter</a>
+                <a href="#">
+                    <img class="icon-img" src="assets/images/Instagram-icon.png" alt="Instagram"> Instagram</a>
+                <a href="#">
+                    <img class="icon-img" src="assets/images/Mail-icon.png" alt=""> Sitio Oficial</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.397239214585!2d-58.761029608263385!3d-34.42262087150742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9fedc44b2f01%3A0x61659f76d22e06db!2sLas%20Higueras!5e1!3m2!1ses-419!2sar!4v1673638715131!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+</main>
+<div class="top"></div>
+<footer class="black-bg">
+    <p>Copyright 2023 Hangar5</p>
+</footer>
 </body>
 </html>
